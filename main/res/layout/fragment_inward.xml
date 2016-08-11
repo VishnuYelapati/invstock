@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/butProd"
+            android:text="Scan Product"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvStatus"
+        android:text="Press a button to start a scan."
+        android:textSize="18sp" />
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvresult"
+        android:text="Product Details:"
+        android:textSize="18sp"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"/>
+    <LinearLayout
+        android:id="@+id/ll_products"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_totalproducts"
+            android:text="Total Products"
+            android:textSize="18sp"/>
+        <EditText android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_totalProducts"
+            android:hint="Enter No Of Products"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"/>
+</LinearLayout>
